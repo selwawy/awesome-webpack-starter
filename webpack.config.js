@@ -11,7 +11,7 @@ const config = {
    },
    output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: '[name][contenthash].js',
+      filename: 'js/[name][contenthash].js',
       clean: true,
       assetModuleFilename: (pathData) => {
          const filepath = path.dirname(pathData.filename).split('/').slice(1).join('/');
@@ -55,9 +55,6 @@ const config = {
       new HtmlWebpackPlugin({
          title: 'LVP',
          template: 'src/template.html',
-         // templateParameters: ,
-         // inject: 'body',
-         // scriptLoading: 'blocking',
       }),
       // new BundleAnalyzerPlugin(),
    ],
