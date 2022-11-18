@@ -1,0 +1,14 @@
+body {
+   max-width: 30rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-inline: auto;
+   font-family: var(--ff-inter);
+   font-size: 2rem;
+   background: var(--clr-grey);
+}
+h1 {
+   margin-block-end: 1rem;
+}

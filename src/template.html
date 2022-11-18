@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title><%= htmlWebpackPlugin.options.title %></title>
+      <style>
+         @font-face {
+            font-family: 'Inter';
+            src: url("<%=require('./fonts/inter-variableFont_slnt,wght-subset.woff2')%>") format('woff2'),
+               url("<%=require('./fonts/inter-variablefont_slnt\,wght-subset.zopfli.woff')%>") format('woff');
+            font-weight: 100 900;
+            font-display: swap;
+         }
+      </style>
+   </head>
+   <body>
+      <h1></h1>
+      <img src="<%=require('./media/cool.jpg')%>" alt="" />
+   </body>
+</html>

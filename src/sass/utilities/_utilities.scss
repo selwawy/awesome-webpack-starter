@@ -1,0 +1,58 @@
+/* @link https://css-tricks.com/use-css-clamp-to-create-a-more-flexible-wrapper-utility */
+.container {
+   width: 85vw;
+   width: clamp(16rem, 85vw, 75rem);
+   // max-width: 85vw;
+   // width: min(90vw, 85rem);
+   margin-inline: auto;
+   position: relative;
+}
+
+.section {
+   padding-block-start: var(--space-2xl);
+}
+
+.section__title {
+   margin-block-end: 1em;
+   // font-size: var(--step-4);
+   // font-weight: 700;
+}
+
+.section--black {
+   background-color: #000;
+   color: #eee;
+}
+
+.section__description {
+   font-size: var(--step-1);
+}
+
+.flow > * + * {
+   margin-top: var(--flow-space, 1rem);
+}
+
+.uppercase {
+   text-transform: uppercase;
+}
+
+.visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   padding: 0 !important;
+   margin: -1px !important;
+   overflow: hidden !important;
+   clip: rect(0, 0, 0, 0) !important;
+   white-space: nowrap !important;
+   border: 0 !important;
+}
+
+.stretched-link::after {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1;
+   content: '';
+}

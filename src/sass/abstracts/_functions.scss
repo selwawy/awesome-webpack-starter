@@ -1,0 +1,14 @@
+@use 'sass:math';
+
+// to return rems
+@function rem($pixel) {
+   // If $pixel is unitless, divide it by 16
+   @if math.is-unitless($pixel) {
+      @return math.div($pixel, 16) + rem;
+   }
+
+   // Otherwise (else) throw an error
+   @else {
+      @error 'Dont\'t use unites when using the rem() function, only numbers.';
+   }
+}
