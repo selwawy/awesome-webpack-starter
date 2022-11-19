@@ -1,14 +1,7 @@
-body {
-   max-width: 30rem;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin-inline: auto;
-   font-family: var(--ff-inter);
-   font-size: 1rem;
-   background: var(--clr-grey);
-}
-h1 {
-   margin-block-end: 1rem;
+html {
+   background: url(../media/bg.jpg) var(--clr-grey) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
 }
